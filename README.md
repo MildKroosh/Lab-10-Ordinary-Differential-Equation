@@ -1,2 +1,5 @@
 # Lab-10-Ordinary-Differential-Equation
 To numerically obtain the solution of generic governing ODE of any physical system
+
+Euler's Method is among the most straightforward numerical methods employed to solve Ordinary Differential Equations (ODEs). This MATLAB script applies Euler's Method to address the ODE y' = 4e^(0.8t) - 0.5y, starting from the initial condition y(0) = 2 across the range t = 0 to 4 with a step size of h = 1. The technique functions by determining the slope at the present point and advancing using the equation y(i+1) = y(i) + f(t,y) × h, continuing this procedure until the interval's conclusion is attained. At every stage, the calculated value is displayed in a table and saved for graphing, providing a visual depiction of the solution's development over time. While Euler's Method is simple to grasp and apply, it has a drawback — because it relies solely on the slope at the start of each interval, the error builds up with each step, reaching around 24% by t=4. For issues that need greater precision, it is advisable to use more sophisticated techniques like the Modified Euler Method or the Runge-Kutta Method
+
